@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="R. Rua ABC"
+            android:textSize="13sp"
+            android:drawableEnd="@drawable/keyboard_arrow_down_24dp_ff0000"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/qr_code_scanner_24dp_ff0000"
+            android:layout_gravity="end"
+            android:paddingHorizontal="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/Red"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/add_tab"
+        android:background="#ff00ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/add_viewpager"
+        android:background="#0000ff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+</LinearLayout>
