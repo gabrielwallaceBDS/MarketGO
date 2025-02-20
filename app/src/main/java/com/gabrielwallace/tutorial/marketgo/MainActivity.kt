@@ -8,6 +8,7 @@ import com.gabrielwallace.tutorial.marketgo.databinding.ActivityMainBinding
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentStatePagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.TabView
@@ -37,7 +38,9 @@ class MainActivity : AppCompatActivity() {
 
 }
 
-class tabViewPagerAdapter() :  FragmentStatePagerAdapter
+class tabViewPagerAdapter(fa: FragmentActivity) :  FragmentStatePagerAdapter(fa){
+    get
+}
 
 class MarketplaceFragment : Fragment() {}
 
