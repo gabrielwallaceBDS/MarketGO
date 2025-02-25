@@ -38,8 +38,14 @@ class MainActivity : AppCompatActivity() {
 
 }
 
-class tabViewPagerAdapter(fa: FragmentActivity) :  FragmentStatePagerAdapter(fa){
-    get
+class tabViewPagerAdapter(fa: FragmentActivity) :  FragmentStateAdapter(fa){
+
+    override fun getItemCount(): Fragment {
+        TODO("Not yet implemented")
+    }
+    override fun createFragment(position: Int): Fragment {
+        TODO("Not yet Implemented")
+    }
 }
 
 class MarketplaceFragment : Fragment() {}
